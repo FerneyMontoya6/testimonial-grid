@@ -13,12 +13,106 @@
 * {
   padding: 0;
   margin: 0;
-  /* font-size: 62.5%; */
   box-sizing: border-box;
 }
 
 html {
-  /* font-size: 1.3rem; */
+  font-size: 62.5%;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+body {
+  font-size: 1.3rem;
+  background-color: var(--light-grayish-blue);
+}
+
+main {
+  display: grid;
+  width: 32rem;
+  margin: 4rem auto;
+  row-gap: 2rem;
+}
+
+.card {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.card header {
+  display: flex;
+  height: 3rem;
+}
+
+.card img {
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.card:first-child img,
+.card:nth-child(4) img {
+  border: 0.3rem solid rgba(144, 104, 206, 1);
+}
+
+.card h2 {
+  margin: 1.8rem 0;
+}
+
+.card blockquote,
+.card span:last-child {
+  line-height: 1.8rem;
+  color: var(--Light-gray);
+  opacity: 0.7;
+}
+
+.card__personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card:first-child {
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 90% top;
+  background-color: var(--moderate-violet);
+}
+
+.card:nth-child(2) {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card:nth-child(3),
+.card:last-child {
+  background-color: var(--white);
+}
+
+.card:nth-child(3) h2,
+.card:last-child h2 {
+  color: var(--very-dark-blackish-blue);
+}
+
+.card:nth-child(3) blockquote,
+.card:last-child blockquote {
+  color: var(--very-dark-blackish-blue);
+  opacity: 0.7;
+}
+
+.card:nth-child(3) span:first-child,
+.card:last-child span:first-child {
+  font-weight: 600;
+  color: var(--very-dark-blackish-blue);
+  opacity: 0.7;
+}
+
+.card:nth-child(3) span:last-child,
+.card:last-child span:last-child {
+  font-weight: 600;
+  color: var(--very-dark-blackish-blue);
+  opacity: 0.5;
+}
+
+.card:nth-child(4) {
+  background-color: var(--very-dark-blackish-blue);
+}
